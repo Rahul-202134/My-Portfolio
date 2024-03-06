@@ -1,0 +1,146 @@
+body{
+  left: 0;
+  top: 0;
+  color: aliceblue;
+  background-color: #000505;
+}
+.hr{
+  color: white;
+}
+.bg-color{
+  background-color: #000505;
+}
+.text-font{
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.bg-circle{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 1px solid rgb(255, 255, 255);
+     
+}
+.fit-image{
+    width: 100%;
+    height : 100%;
+    object-fit: contain;
+}
+.project-div{
+  width: 290px;
+}
+.sec-B{
+  background-color:#013634;
+  align-items: center;
+  justify-content: center;
+  text-align: -webkit-center;
+}
+.sec-B p{
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center; 
+ border: 1px solid;
+ margin-top: 5px;
+ cursor: pointer;
+ padding: 5px 5px 5px 5px;
+  
+}
+.sec-B p:hover{
+  background-color:#cc104f;
+  color: white;
+}
+
+
+
+.slideshow-container {
+  height: 175px;
+  background-color: #cc104f;
+  color: #f9f2f4;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  bottom: 50px;
+}
+
+.slides {
+  width: 100%;
+}
+
+.slide {
+  width: 100%; 
+  height: 200px;
+  cursor: pointer;
+  
+}
+.link p span{
+  color: #faab34;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+
+  p {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  p {
+      font-size: 12px;
+  }
+  .footer{
+    text-align: center;
+    align-items: center;
+    display: block;
+  }
+  .con p{
+    width: 150px;
+    height: 120px;
+  }
+  
+}
+.nav-p li{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.footer{
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.follow img{
+  margin-left: 15px;
+  width: 40px;
+  height: 30px;
+}
+.con p{
+  width: 150px;
+    height: 150px;
+    border: #f9f2f4 10px solid;
+    border-radius: 50%; 
+    background-color: #cc104f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    justify-self: left;
+    
+}
+.con p:nth-child(2){
+  margin-left: 30px;
+}
+.bar{
+  background-color: #cc104f !important;
+}
