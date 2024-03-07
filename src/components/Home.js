@@ -13,10 +13,10 @@ export default function Home() {
                 <a href="https://github.com/Rahul-202134/Daily-News"><img src={DailyNews} alt="" /></a>
               </div>
               <div className="col-lg-3 pro-div">
-                <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" width={300} height={150} /></a>
+                <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" /></a>
               </div>
               <div className="col-lg-3 pro-div">
-                <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" width={300} height={150} /></a>
+                <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt=""/></a>
               </div>
               <div className="col-lg-3">
                 <div className="slideshow-container">
