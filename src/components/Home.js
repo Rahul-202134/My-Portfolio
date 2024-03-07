@@ -8,20 +8,17 @@ export default function Home() {
     <div>
       <div className="container text-white">
             <h3 className='text-center'>Projects</h3>
-            <div className="row pro-div">
-              <div className="col-lg-4">
-                <a href="https://github.com/Rahul-202134/Daily-News"><img src={DailyNews} alt="" width={290} height={150} /></a>
-                <div className='flex justify-center items-center h-screen bg-white project-div'>
-                  <h5 className="text-center text-black ml-2">Daily News</h5>
-                </div>
+            <div className="row">
+              <div className="col-lg-3 pro-div">
+                <a href="https://github.com/Rahul-202134/Daily-News"><img src={DailyNews} alt="" /></a>
               </div>
-              <div className="col-lg-4">
-                <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" width={290} height={150} /></a>
-                <div className='flex justify-center items-center h-screen bg-white project-div '>
-                  <h5 className="text-center text-black ml-2">EShoping</h5>
-                </div>
+              <div className="col-lg-3 pro-div">
+                <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" width={300} height={150} /></a>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-3 pro-div">
+                <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" width={300} height={150} /></a>
+              </div>
+              <div className="col-lg-3">
                 <div className="slideshow-container">
                   <div className="slides">
                     <h4>More Projects:</h4>
@@ -43,7 +40,7 @@ export default function Home() {
                           <a href=" https://rahul-202134.github.io/Resume/"><p>Resume</p></a>
                         </li>
                         <li>
-                          <p>Farmix</p>
+                          <a href="">Farmix</a><p></p>
                         </li>
                       </ol>
                     </div>
