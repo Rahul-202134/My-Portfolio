@@ -39,9 +39,7 @@ export default function Home() {
                         <li>
                           <a href=" https://rahul-202134.github.io/Resume/"><p>Resume</p></a>
                         </li>
-                        <li>
-                          <a href="">Farmix</a><p></p>
-                        </li>
+                        
                       </ol>
                     </div>
                   </div>
