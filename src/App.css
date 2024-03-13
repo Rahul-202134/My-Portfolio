@@ -1,68 +1,51 @@
-body{
+body {
   left: 0;
   top: 0;
   color: aliceblue;
   background-color: #000505;
 }
-.hr{
+
+.hr {
   color: white;
 }
-.bg-color{
+
+.bg-color {
   background-color: #000505;
 }
-.text-font{
+
+.text-font {
   margin-top: 30px;
-  margin-left: 0px;
-  margin-right: 0px;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   font-size: 30px;
 }
-.bg-circle{
-    display: inline-block;
-    height: 120px;
-    width: 120px;
-    border-radius: 100%;
-    border: 1px solid rgb(255, 255, 255);
-     
+
+.bg-circle {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%; /* Use percentage for border-radius */
+  border: 1px solid #fff; /* Shortened color code */
 }
-.fit-image{
-    width: 100%;
-    height : 100%;
-    object-fit: contain;
+
+.fit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-.pro-div{
+
+.pro-div {
   width: 300px;
-  height: 175px; 
+  height: 175px;
   padding: 10px;
 }
-.pro-div img{
+
+.pro-div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.sec-B{
-  background-color:#013634;
-  align-items: center;
-  justify-content: center;
-  text-align: -webkit-center;
-}
-.sec-B p{
-  text-align: center;
-  display: inline-block;
-  justify-content: center;
-  align-items: center; 
- border: 1px solid;
- margin-top: 5px;
- cursor: pointer;
- padding: 5px 5px 5px 5px;
-  
-}
-.sec-B p:hover{
-  background-color:#cc104f;
-  color: white;
-}
+
+
 
 
 
@@ -80,78 +63,78 @@ body{
 }
 
 .slide {
-  width: 100%; 
-  height: 200px;
+  width: 100%;
+  height: 200px; /* Adjusted height */
   cursor: pointer;
-  
 }
-.slide a{
+
+.slide a {
   text-decoration: none !important;
   color: white;
 }
-.link p span{
+
+.link p span {
   color: #faab34;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
 
-  p {
-      font-size: 16px;
+@media screen and (max-width: 768px) {
+  .text-font {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
-
-  p {
-      font-size: 12px;
+  .text-font {
+    font-size: 12px;
   }
-  .footer{
+  .footer {
     text-align: center;
-    align-items: center;
-    display: block;
   }
-  .con p{
+  .con p {
     width: 150px;
-    height: 120px;
+    height: 120px; /* Adjusted height */
   }
-  
 }
-.nav-p li{
+
+.nav-p li {
   padding: 15px;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
   color: white;
-  text-decoration: none;
 }
-.footer{
+
+.footer {
   margin-top: 30px;
   justify-content: space-between;
 }
-.follow img{
-  margin-left: 15px;
+
+.follow img {
+  margin-left: 10px;
   width: 40px;
   height: 30px;
 }
-.con p{
+
+.con p {
   width: 150px;
-    height: 150px;
-    border: #f9f2f4 10px solid;
-    border-radius: 50%; 
-    background-color: #cc104f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    justify-self: left;
-    
+  height: 150px;
+  border: 10px solid #f9f2f4;
+  border-radius: 50%;
+  background-color: #cc104f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
 }
-.con p:nth-child(2){
+
+.con p:nth-child(2) {
   margin-left: 30px;
 }
-.bar{
+
+.bar {
   background-color: #cc104f !important;
 }

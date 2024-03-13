@@ -10,11 +10,12 @@ const Navbar = (props) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+ 
   return (
-    <div className='row justify-content-center'>
-      <div className='row justify-content-center'>
-        <div className='bg-dark'>
-          <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundImage: `url(${image})` }}>
+    <div className='justify-content-center'>
+      <div className='justify-content-center'>
+        <div className=''>
+          <nav className="navbar navbar-expand-lg" style={{ backgroundImage: `url(${image})` }}>
             <div className="container">
               <button className="navbar-toggler" type="button" onClick={toggleMenu}>
                 <span className="navbar-toggler-icon"></span>
