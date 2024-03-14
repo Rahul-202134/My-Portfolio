@@ -34,16 +34,16 @@ const Navbar = (props) => {
                   </li>
                 </ul>
                 <ul className="navbar-nav ms-auto d-flex nav-p">
-                  <li className="nav-item text-white text-center">
+                  <li className="nav-item text-center">
                     <Link className="nav-link text-white" to="/">Home</Link>
                   </li>
-                  <li className="nav-item text-white text-center">
+                  <li className="nav-item text-center">
                     <Link className="nav-link text-white" to="/about">About</Link>
                   </li>
-                  <li className="nav-item text-white text-center">
+                  <li className="nav-item text-center">
                     <Link className="nav-link text-white" to="/skills">Skills</Link>
                   </li>
-                  <li className="nav-item text-white text-center">
+                  <li className="nav-item text-center">
                     <Link className="nav-link text-white" to="/contact">Contact</Link>
                   </li>
                 </ul>
