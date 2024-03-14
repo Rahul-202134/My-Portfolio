@@ -1,7 +1,7 @@
 import React from 'react';
 import DailyNews from './news.jpg';
 import ecommerce from './e-commerce.jpg';
-import farmer from './farmer.jpg';
+import farmix from './farmer.jpg';
 import git from './github.png';
 import linkdin from './linkdin.png';
 import pdfFile from './Resume.pdf';
@@ -16,7 +16,7 @@ export default function Home() {
             <a href="https://github.com/Rahul-202134/Daily-News"><img src={DailyNews} alt="" /></a>
           </div>
           <div className="col-lg-3 pro-div">
-            <a href="https://e-shoping-omega.vercel.app/"><img src={farmer} alt="" /></a>
+            <a href="https://github.com/Rahul-202134/farmix"><img src={farmix} alt="" /></a>
           </div>
           <div className="col-lg-3 pro-div">
             <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt=""/></a>

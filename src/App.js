@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 function App() {
   return (
-    <div className='bg-dark'>
+    <div>
         <Router>
           <Navbar logo={logo} />
           <Routes> 

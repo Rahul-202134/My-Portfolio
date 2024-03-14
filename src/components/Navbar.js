@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import image from './bg.jpg';
+import image from './bg5.webp';
 
 
 const Navbar = (props) => {
@@ -50,8 +50,8 @@ const Navbar = (props) => {
               </div>
             </div>
           </nav>
-          <br />
-          <hr className='hr' />
+      
+        <br />
         </div>
       </div>
     </div>
