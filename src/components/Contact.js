@@ -32,13 +32,13 @@ function Contact() {
         <div className='col-lg-5'>
           <form onSubmit={handleSubmit}>
             <label className='text-white' htmlFor="">Full Name*</label>
-            <input className='form-control' type="text" name="from_name" value={name} onChange={(e) => setName(e.target.value)} required />
+            <input className='form-control' type="text" name="from_name" placeholder='Full Name' value={name} onChange={(e) => setName(e.target.value)} required />
             <label className='text-white' htmlFor="">Email*</label>
-            <input className='form-control' type="email" name="from_email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input className='form-control' type="email" name="from_email" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} required />
             <label className='text-white' htmlFor="">Subject*</label>
-            <input className='form-control' type="text" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
+            <input className='form-control' type="text" name="subject" value={subject} placeholder='Subject' onChange={(e) => setSubject(e.target.value)} required />
             <label className='text-white' htmlFor="">Message</label>
-            <textarea className='form-control' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+            <textarea className='form-control' name="message" value={message} placeholder='Message' onChange={(e) => setMessage(e.target.value)} required></textarea>
             <button type='submit' className='form-control btn btn-primary mt-2 mb-4'>Submit</button>
           </form>
         </div>
