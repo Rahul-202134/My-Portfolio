@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import image from './bg5.webp';
-
 
 const Navbar = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,11 +13,11 @@ const Navbar = (props) => {
     <div className='justify-content-center nav-main'>
       <div className='justify-content-center'>
         <div className=''>
-          <nav className="navbar navbar-expand-lg" style={{ backgroundImage: `url(${image})` }}>
+          <nav className="navbar navbar-expand-lg">
             <div className="container">
               <button className="navbar-toggler" type="button" onClick={toggleMenu}>
                 <span className="navbar-toggler-icon" style={{color:'white'}}></span>
-                <span style={{ marginLeft: '30px' }}>𝓡𝓪𝓱𝓾𝓵 𝓚𝓾𝓶𝓪𝓻</span>
+                <span style={{ marginLeft: '30px',color:'white' }}>𝓡𝓪𝓱𝓾𝓵 𝓚𝓾𝓶𝓪𝓻</span>
               </button>
               <div className={`collapse navbar-collapse  ${isMenuOpen ? 'show' : ''}`}>
                 <ul className="navbar-nav">
@@ -28,7 +26,7 @@ const Navbar = (props) => {
                       <img src={props.logo} alt='' className="object-cover fit-image" />
                     </div>
                   </li>
-                  <li className='nav-item text-white text-center'>
+                  <li className='nav-item text-white text-center my-name'>
                     <p className="text-font name">𝓡𝓪𝓱𝓾𝓵 𝓚𝓾𝓶𝓪𝓻</p>
                     <p style={{ fontSize: '20px' }}>(Software Engineer)</p>
                   </li>
@@ -52,6 +50,7 @@ const Navbar = (props) => {
           </nav>
       
         <br />
+        <hr className="hr" />
         </div>
       </div>
     </div>
