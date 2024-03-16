@@ -147,6 +147,11 @@ body {
     font-size: 20px;
     margin-left: 60px;
   }
+  .pro-div {
+    width: 300px;
+    height: 175px;
+    transition: transform .2s;
+  }
 }
 .social-link {
   font-size: 40px;
