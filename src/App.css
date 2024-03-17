@@ -103,7 +103,7 @@ body {
   }
   .bg-circles {
     background-image: url('./profile.jpeg');
-    margin-left: 70px;
+    margin-left: 90px;
     display: inline-block;
     height: 150px;
     width: 150px;
@@ -145,10 +145,10 @@ body {
   .sofE{
     display: block;
     font-size: 20px;
-    margin-left: 60px;
+    margin-left: 80px;
   }
   .pro-div {
-    width: 300px;
+    width: 340px;
     height: 175px;
     transition: transform .2s;
   }
