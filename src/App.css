@@ -10,10 +10,6 @@ body {
   color: white;
 }
 
-.bg-color {
-  background-color: #000505;
-}
-
 .text-font {
   margin-top: 30px;
   text-align: center;
@@ -36,8 +32,7 @@ body {
 }
 
 .pro-div {
-  width: 300px;
-  padding: 10px;
+  width: 350px;
   height: 175px;
   transition: transform .2s;
 }
@@ -59,17 +54,6 @@ body {
 .pro-div:hover {
   transform: scale(1.1); 
   filter: brightness(40%);
-}
-.slideshow-container {
-  padding: 10px;
-  height: 170px;
-  color: #f9f2f4;
-  overflow-y: scroll;
-  border: 1px solid #ccc;
-}
-.slide a {
-  text-decoration: none !important;
-  color: white;
 }
 .link p span {
   color: #faab34;
@@ -142,7 +126,7 @@ body {
     margin-left: 90px;
   }
   .pro-div {
-    width: 360px;
+    width: 350px;
     height: 175px;
     transition: transform .2s;
   }
@@ -206,7 +190,7 @@ body {
     margin-left: 90px;
   }
   .pro-div {
-    width: 360px;
+    width: 340px;
     height: 175px;
     transition: transform .2s;
   }
