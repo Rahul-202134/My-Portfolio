@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 export default function Skills() {
-  // Define state for each skill's percentage
   const [htmlPercentage, setHtmlPercentage] = useState(90);
   const [cssPercentage, setCssPercentage] = useState(80);
   const [bootstrapPercentage, setBootstrapPercentage] = useState(75);

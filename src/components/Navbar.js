@@ -48,8 +48,6 @@ const Navbar = (props) => {
               </div>
             </div>
           </nav>
-      
-        <br />
         <hr className="hr" />
         </div>
       </div>

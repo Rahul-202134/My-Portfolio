@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-function Contact() {
+export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -38,7 +38,7 @@ function Contact() {
             <label className='text-white' htmlFor="">Subject*</label>
             <input className='form-control' type="text" name="subject" value={subject} placeholder='Subject' onChange={(e) => setSubject(e.target.value)} required />
             <label className='text-white' htmlFor="">Message</label>
-            <textarea className='form-control' name="message" value={message} placeholder='Message' onChange={(e) => setMessage(e.target.value)} required></textarea>
+            <textarea className='form-control' style={{height:'150px'}} name="message" value={message} placeholder='Write The Message Here...' onChange={(e) => setMessage(e.target.value)} required></textarea>
             <button type='submit' className='form-control btn btn-primary mt-2 mb-4'>Submit</button>
           </form>
         </div>
@@ -46,5 +46,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;

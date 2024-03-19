@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import DailyNews from './news.jpg';
 import ecommerce from './e-commerce.jpg';
 import farmix from './farmer.jpg';
+import whether from './whether.png'
+import Todo from './Todo.png'
+import sps from './Sps.jpeg'
 import pdfFile from './Resume.pdf';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -57,6 +60,31 @@ export default function Home(props) {
           </div>
           <div className="col-lg-4">
             <div className='pro-div'>
+              <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" /></a>
+            </div>
+            <div className='project-name'>
+              E-Commerce
+            </div>
+            <div>
+              {
+                showReadMore[3] && (
+                  <p style={{ color: 'white' }}>
+                    Developed a fully functional e-commerce website
+                    to buy the product for men and women.
+                    ·User authentication and registration system.
+                    ·Responsive design for optimal user experience on desktop and
+                    mobile devices.
+                    Technologies Used: HTML, CSS, PHP, JavaScript, MySQL
+                  </p>
+                )
+              }
+              <div className='read-more'>
+                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(3)}>Read More</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className='pro-div'>
               <a href="https://github.com/Rahul-202134/farmix"><img src={farmix} alt="" /></a>
             </div>
             <div className='project-name'>
@@ -83,26 +111,84 @@ export default function Home(props) {
           </div>
           <div className="col-lg-4">
             <div className='pro-div'>
-              <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" /></a>
+              <a href="https://github.com/Rahul-202134/whetherApp"><img src={whether} alt="" /></a>
             </div>
             <div className='project-name'>
-              E-Commerce
+              Whether
             </div>
             <div>
               {
-                showReadMore[3] && (
-                  <p style={{ color: 'white' }}>
-                    Developed a fully functional e-commerce website
-                    to buy the product for men and women.
-                    ·User authentication and registration system.
-                    ·Responsive design for optimal user experience on desktop and
-                    mobile devices.
-                    Technologies Used: HTML, CSS, PHP, JavaScript, MySQL
+                showReadMore[4] && (
+                  <p style={{ color: 'white' }} >
+                   The Weather App is a user-friendly application designed 
+                   to provide users with up-to-date weather information for various 
+                   locations around the world. It offers a seamless experience for 
+                   users to access current weather conditions and forecasts.
+
+                   The application is built using modern frontend technologies 
+                   such as React.js, providing a robust and efficient user interface. 
+                   React.js enables component-based development,
+                    making the codebase modular, maintainable, and scalable.
                   </p>
                 )
               }
               <div className='read-more'>
-                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(3)}>Read More</button>
+                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(4)}>Read More</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className='pro-div'>
+              <a href="https://github.com/Rahul-202134/Todo"><img src={Todo} alt="" /></a>
+            </div>
+            <div className='project-name'>
+              Todo-List
+            </div>
+            <div>
+              {
+                showReadMore[5] && (
+                  <p style={{ color: 'white' }}>
+                   The Todo List Application is a productivity tool
+                    designed to help users organize their tasks efficiently and 
+                    manage their daily activities effectively. It offers a simple 
+                    yet powerful interface for users to create, prioritize, and track tasks,
+                    ensuring better time management and task completion.
+
+                    The application's frontend is built using modern
+                     web technologies such as HTML, CSS, and JavaScript. 
+                     Frameworks like React.js or Vue.js may be utilized
+                      to create a dynamic and interactive user 
+                    interface, enhancing user experience and responsiveness.
+                  </p>
+                )
+              }
+              <div className='read-more'>
+                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(5)}>Read More</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className='pro-div'>
+              <a href="https://github.com/Rahul-202134/sps-game"><img src={sps} alt="" /></a>
+            </div>
+            <div className='project-name'>
+              Sciessor-Paper
+            </div>
+            <div>
+              {
+                showReadMore[6] && (
+                  <p style={{ color: 'white' }}>
+                    The Scissors Paper Game, also known as Rock
+                     Paper Scissors, is a classic hand game played 
+                     between two participants. It's a simple yet entertaining 
+                    game that requires quick thinking and strategy.
+
+                    
+                  </p>
+                )
+              }
+              <div className='read-more'>
+                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(6)}>Read More</button>
               </div>
             </div>
           </div>
