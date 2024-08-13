@@ -290,3 +290,6 @@ form{
       gap: 1rem;
   }
 }
+.form-check-label{
+  color: blue;
+}

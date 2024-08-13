@@ -5,7 +5,7 @@ import farmix from './farmer.jpg';
 import whether from './whether.png'
 import Todo from './Todo.png'
 import sps from './Sps.jpeg'
-import pdfFile from './Resume.pdf';
+import pdfFile from './New Resume.pdf';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 

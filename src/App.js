@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import logo from './profile.jpeg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,10 +9,24 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Home from './components/Home';
 function App() {
+  const[mode,setmode]=useState('light');
+  const toggleMode=()=>{
+    if(mode==='light'){
+      setmode('dark');
+      document.body.style.backgroundColor="black";
+      document.body.style.color="white";
+      
+    }
+    else{
+      setmode('light');
+      document.body.style.backgroundColor="white";
+      document.body.style.color="black";
+    }
+  }
   return (
     <div>
         <Router>
-          <Navbar logo={logo} />
+          <Navbar logo={logo} mode={mode} toggleMode={toggleMode} />
           <Routes> 
             <Route exact path='/' element={<Home logo={logo} />} />
             <Route exact path='/about' element={<About />} />
