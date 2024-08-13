@@ -4,10 +4,7 @@ import ecommerce from './e-commerce.jpg';
 import farmix from './farmer.jpg';
 import whether from './whether.png'
 import Todo from './Todo.png'
-import sps from './Sps.jpeg'
-import pdfFile from './New Resume.pdf';
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
+import sps from './Sps.jpeg';
 
 export default function Home(props) {
   const [showReadMore, setShowReadMore] = useState({
@@ -42,7 +39,7 @@ export default function Home(props) {
             <div>
               {
                 showReadMore[1] && (
-                  <p style={{ color: 'white' }} >
+                  <p>
                     Developed a fully functional e-commerce website
                     from scratch using HTML, CSS, PHP, and JavaScript.
                     User authentication and registration system.
@@ -68,7 +65,7 @@ export default function Home(props) {
             <div>
               {
                 showReadMore[3] && (
-                  <p style={{ color: 'white' }}>
+                  <p>
                     Developed a fully functional e-commerce website
                     to buy the product for men and women.
                     ·User authentication and registration system.
@@ -93,7 +90,7 @@ export default function Home(props) {
             <div>
               {
                 showReadMore[2] && (
-                  <p style={{ color: 'white' }}>
+                  <p>
                     I created a website where farmers can list their crops for
                     sale, and buyers can browse and purchase them.
                     Responsive design for optimal user experience on desktop and
@@ -119,15 +116,15 @@ export default function Home(props) {
             <div>
               {
                 showReadMore[4] && (
-                  <p style={{ color: 'white' }} >
-                   The Weather App is a user-friendly application designed 
-                   to provide users with up-to-date weather information for various 
-                   locations around the world. It offers a seamless experience for 
-                   users to access current weather conditions and forecasts.
+                  <p>
+                    The Weather App is a user-friendly application designed
+                    to provide users with up-to-date weather information for various
+                    locations around the world. It offers a seamless experience for
+                    users to access current weather conditions and forecasts.
 
-                   The application is built using modern frontend technologies 
-                   such as React.js, providing a robust and efficient user interface. 
-                   React.js enables component-based development,
+                    The application is built using modern frontend technologies
+                    such as React.js, providing a robust and efficient user interface.
+                    React.js enables component-based development,
                     making the codebase modular, maintainable, and scalable.
                   </p>
                 )
@@ -147,17 +144,17 @@ export default function Home(props) {
             <div>
               {
                 showReadMore[5] && (
-                  <p style={{ color: 'white' }}>
-                   The Todo List Application is a productivity tool
-                    designed to help users organize their tasks efficiently and 
-                    manage their daily activities effectively. It offers a simple 
+                  <p>
+                    The Todo List Application is a productivity tool
+                    designed to help users organize their tasks efficiently and
+                    manage their daily activities effectively. It offers a simple
                     yet powerful interface for users to create, prioritize, and track tasks,
                     ensuring better time management and task completion.
 
                     The application's frontend is built using modern
-                     web technologies such as HTML, CSS, and JavaScript. 
-                     Frameworks like React.js or Vue.js may be utilized
-                      to create a dynamic and interactive user 
+                    web technologies such as HTML, CSS, and JavaScript.
+                    Frameworks like React.js or Vue.js may be utilized
+                    to create a dynamic and interactive user
                     interface, enhancing user experience and responsiveness.
                   </p>
                 )
@@ -177,13 +174,13 @@ export default function Home(props) {
             <div>
               {
                 showReadMore[6] && (
-                  <p style={{ color: 'white' }}>
+                  <p>
                     The Scissors Paper Game, also known as Rock
-                     Paper Scissors, is a classic hand game played 
-                     between two participants. It's a simple yet entertaining 
+                    Paper Scissors, is a classic hand game played
+                    between two participants. It's a simple yet entertaining
                     game that requires quick thinking and strategy.
 
-                    
+
                   </p>
                 )
               }
@@ -193,22 +190,7 @@ export default function Home(props) {
             </div>
           </div>
         </div>
-        <div className='footer text-center d-flex'>
-          <div className='text-center btn-cv'>
-            <a href={pdfFile} className='text-center btn btn-primary' target="_blank" rel="noreferrer">Download Cv </a>
-          </div>
-          <div className='text-center follow d-flex'>
-            <a href="https://github.com/Rahul-202134" className="social-link"><FaGithub style={{ marginBottom: '35px' }} /></a>
-            <a href="https://www.linkedin.com/in/rahulkumar202134" className="social-link"><FaLinkedinIn style={{ marginBottom: '35px' }} /></a>
-          </div>
-        </div>
       </div>
-      <footer className="portfolio-footer text-white text-center">
-            <div className="copyright">
-                &copy; {new Date().getFullYear()}. All rights reserved.
-            </div>
-        </footer>
-
       <br />
     </div>
   );
