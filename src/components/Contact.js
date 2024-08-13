@@ -19,25 +19,24 @@ export default function Contact() {
         setSubject('');
         setMessage('');
       }, (error) => {
-        console.error(error.text);
+      console.error(error.text);
         alert('Error sending email');
       });
   };
-
   return (
     <div className='container'>
       <div className="row justify-content-center">
-        <h3 className='text-white text-center'>---Contact Me---</h3>
-        <p className='text-white text-center'>Get In Touch</p>
-        <div className='col-lg-5'>
+        <h3 className='text-center'>---Contact Me---</h3>
+        <p className='text-center'>Get In Touch</p>
+        <div className='col-lg-5 contact-form'>
           <form onSubmit={handleSubmit}>
-            <label className='text-white' htmlFor="">Full Name*</label>
+            <label htmlFor="">Full Name*</label>
             <input className='form-control' type="text" name="from_name" placeholder='Full Name' value={name} onChange={(e) => setName(e.target.value)} required />
-            <label className='text-white' htmlFor="">Email*</label>
+            <label htmlFor="">Email*</label>
             <input className='form-control' type="email" name="from_email" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} required />
-            <label className='text-white' htmlFor="">Subject*</label>
+            <label htmlFor="">Subject*</label>
             <input className='form-control' type="text" name="subject" value={subject} placeholder='Subject' onChange={(e) => setSubject(e.target.value)} required />
-            <label className='text-white' htmlFor="">Message</label>
+            <label htmlFor="">Message</label>
             <textarea className='form-control' style={{height:'150px'}} name="message" value={message} placeholder='Write The Message Here...' onChange={(e) => setMessage(e.target.value)} required></textarea>
             <button type='submit' className='form-control btn btn-primary mt-2 mb-4'>Submit</button>
           </form>

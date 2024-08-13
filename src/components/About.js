@@ -9,9 +9,9 @@ export default function About() {
     <div className='container'>
       <div className='row justify-content-center'>
         <div className='col-lg-5'>
-          <h2 className='text-center text-white'>--About Me--</h2>
-          <p className='text-center text-white'>Let Me Introduce Myself</p>
-          <p className='text-white'>
+          <h2 className='text-center'>--About Me--</h2>
+          <p className='text-center'>Let Me Introduce Myself</p>
+          <p>
             MCA student with a keen interest in software development
             and a passion for solving complex problems. Seeking
             opportunities to apply my knowledge and contribute to
@@ -21,7 +21,7 @@ export default function About() {
           </p>
           {
             ReadMore && (
-              <p style={{ color: 'white' }}>And i am creative and innovative thinker who
+              <p>And i am creative and innovative thinker who
                 enjoy exploring new ideas and finding creative
                 solution to complex problem.</p>
             )

@@ -10,7 +10,7 @@ export default function Skills() {
   const [reactJsPercentage, setReactJsPercentage] = useState(70);
 
   return (
-    <div className='container text-white'>
+    <div className='container'>
       <div className="row justify-content-center">
         <div className="col-lg-5 mb-4">
           <h3 className='text-center'>Technical Skills</h3>

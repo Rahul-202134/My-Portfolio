@@ -25,7 +25,7 @@ export default function Home(props) {
 
   return (
     <div>
-      <div className="container text-white">
+      <div className="container">
         <div className="bg-circles">
           <span className="object-cover fit-image" ></span>
         </div>
@@ -203,6 +203,12 @@ export default function Home(props) {
           </div>
         </div>
       </div>
+      <footer className="portfolio-footer text-white text-center">
+            <div className="copyright">
+                &copy; {new Date().getFullYear()}. All rights reserved.
+            </div>
+        </footer>
+
       <br />
     </div>
   );
