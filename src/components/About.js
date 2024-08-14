@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import about from './About.jpg'
+import about from './images/About.jpg'
 export default function About() {
   const [ReadMore, setReadMore] = useState(false)
   const handleReadMore = () => {

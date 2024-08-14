@@ -1,5 +1,5 @@
 import React from 'react'
-import pdfFile from './New Resume.pdf';
+import pdfFile from './images/New Resume.pdf';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 function Footer() {

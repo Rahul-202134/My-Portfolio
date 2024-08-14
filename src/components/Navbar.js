@@ -34,13 +34,13 @@ const Navbar = (props) => {
                     <Link className="nav-link" to="/">Home</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/about">About</Link>
+                    <Link className="nav-link" to="/about">About Us</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="/skills">Skills</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/contact">Contact</Link>
+                    <Link className="nav-link" to="/contact">Contact Us</Link>
                   </li>
                   <li className="nav-item mt-2">
                     <div className={`form-check form-switch ${props.mode === 'light' ? 'dark' : 'light'}`}>

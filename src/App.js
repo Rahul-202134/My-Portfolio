@@ -29,7 +29,7 @@ function App() {
         <Router>
           <Navbar logo={logo} mode={mode} toggleMode={toggleMode} />
           <Routes> 
-            <Route exact path='/' element={<Home logo={logo} />} />
+            <Route exact path='/' element={<Home />} />
             <Route exact path='/about' element={<About />} />
             <Route exact path='/Skills' element={<Skills/> }/>
             <Route exact path='/contact' element={<Contact />} />
