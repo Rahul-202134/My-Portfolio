@@ -1,195 +1,83 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
 import DailyNews from './images/news.jpg';
 import ecommerce from './images/e-commerce.jpg';
 import farmix from './images/farmer.jpg';
-import whether from './images/whether.png'
-import Todo from './images/Todo.png'
+import whether from './images/whether.png';
+import Todo from './images/Todo.png';
 import sps from './images/Sps.jpeg';
-function Projects() {
-    const [showReadMore, setShowReadMore] = useState({
-        1: false,
-        2: false,
-        3: false
-      });
-    const handleReadMore = (id) => {
-        setShowReadMore(prevState => ({
-          ...prevState,
-          [id]: !prevState[id]
-        }));
-      }
+import { motion } from 'framer-motion';
+
+const Projects = ({ darkMode }) => {
+  const [showReadMore, setShowReadMore] = useState({
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+    5: false,
+    6: false,
+  });
+
+  const handleReadMore = (id) => {
+    setShowReadMore(prevState => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+
+  
   return (
-    <div>
-      <div className="container">
-        <div className="bg-circles">
-          <span className="object-cover fit-image" ></span>
-        </div>
-        <p className='sofE'>(Software Engineer)</p>
-        <h3 className='text-center'>Projects</h3>
-        <div className="row">
-          <div className="col-lg-4">
-            <div className='pro-div'>
-              <a href="https://github.com/Rahul-202134/Daily-News"><img src={DailyNews} alt="" /></a>
-            </div>
-            <div className='project-name'>
-              Daily News
-            </div>
-            <div>
-              {
-                showReadMore[1] && (
-                  <p>
-                    Developed a fully functional e-commerce website
-                    from scratch using HTML, CSS, PHP, and JavaScript.
-                    User authentication and registration system.
-                    Product catalog with dynamic filtering and search functionality.
-                    Responsive design for optimal user experience on desktop and
-                    mobile devices.
-                    Technologies Used: HTML, CSS, PHP, JavaScript, MySQL
-                  </p>
-                )
-              }
-              <div className='read-more'>
-                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(1)}>Read More</button>
+    <div className={`projects-container ${darkMode ? 'dark-mode' : ''}`}>
+      <div className="projects-header">
+        <motion.h3
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="projects-title"
+        >
+          Projects
+        </motion.h3>
+      </div>
+      <div className="projects-grid">
+        {[
+          { id: 1, name: 'Daily News', image: DailyNews, link: 'https://github.com/Rahul-202134/Daily-News', description: 'Developed a fully functional news website with various features.' },
+          { id: 2, name: 'E-Commerce', image: ecommerce, link: 'https://e-shoping-omega.vercel.app/', description: 'Developed a fully functional e-commerce website for men and women.' },
+          { id: 3, name: 'Farmix', image: farmix, link: 'https://github.com/Rahul-202134/farmix', description: 'Created a platform for farmers to list crops for sale and buyers to purchase them.' },
+          { id: 4, name: 'Whether', image: whether, link: 'https://github.com/Rahul-202134/whetherApp', description: 'Weather app providing current weather information using modern frontend technologies.' },
+          { id: 5, name: 'Todo-List', image: Todo, link: 'https://github.com/Rahul-202134/Todo', description: 'A productivity tool for managing tasks efficiently.' },
+          { id: 6, name: 'Sciessor-Paper', image: sps, link: 'https://github.com/Rahul-202134/sps-game', description: 'Classic Rock Paper Scissors game with a simple yet entertaining interface.' }
+        ].map(project => (
+          <div key={project.id} className="project-card">
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <motion.img
+                src={project.image}
+                alt={project.name}
+                className="project-image"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6 }}
+              />
+            </a>
+            <div className="project-info">
+              <h4 className="project-name">{project.name}</h4>
+              {showReadMore[project.id] && (
+                <p className="project-description">
+                  {project.description}
+                </p>
+              )}
+              <div className="read-more">
+                <button
+                  className="btn btn-primary"
+                  onClick={() => handleReadMore(project.id)}
+                >
+                  {showReadMore[project.id] ? 'Show Less' : 'Read More'}
+                </button>
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
-            <div className='pro-div'>
-              <a href="https://e-shoping-omega.vercel.app/"><img src={ecommerce} alt="" /></a>
-            </div>
-            <div className='project-name'>
-              E-Commerce
-            </div>
-            <div>
-              {
-                showReadMore[3] && (
-                  <p>
-                    Developed a fully functional e-commerce website
-                    to buy the product for men and women.
-                    ·User authentication and registration system.
-                    ·Responsive design for optimal user experience on desktop and
-                    mobile devices.
-                    Technologies Used: HTML, CSS, PHP, JavaScript, MySQL
-                  </p>
-                )
-              }
-              <div className='read-more'>
-                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(3)}>Read More</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className='pro-div'>
-              <a href="https://github.com/Rahul-202134/farmix"><img src={farmix} alt="" /></a>
-            </div>
-            <div className='project-name'>
-              Farmix
-            </div>
-            <div>
-              {
-                showReadMore[2] && (
-                  <p>
-                    I created a website where farmers can list their crops for
-                    sale, and buyers can browse and purchase them.
-                    Responsive design for optimal user experience on desktop and
-                    mobile devices.
-                    Use the website on their computers and phones.
-                    Technologies Used: HTML, CSS, PHP, JavaScript, MySQL (for
-                    storing data), and payment integration.
-                  </p>
-                )
-              }
-              <div className='read-more'>
-                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(2)}>Read More</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className='pro-div'>
-              <a href="https://github.com/Rahul-202134/whetherApp"><img src={whether} alt="" /></a>
-            </div>
-            <div className='project-name'>
-              Whether
-            </div>
-            <div>
-              {
-                showReadMore[4] && (
-                  <p>
-                    The Weather App is a user-friendly application designed
-                    to provide users with up-to-date weather information for various
-                    locations around the world. It offers a seamless experience for
-                    users to access current weather conditions and forecasts.
-
-                    The application is built using modern frontend technologies
-                    such as React.js, providing a robust and efficient user interface.
-                    React.js enables component-based development,
-                    making the codebase modular, maintainable, and scalable.
-                  </p>
-                )
-              }
-              <div className='read-more'>
-                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(4)}>Read More</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className='pro-div'>
-              <a href="https://github.com/Rahul-202134/Todo"><img src={Todo} alt="" /></a>
-            </div>
-            <div className='project-name'>
-              Todo-List
-            </div>
-            <div>
-              {
-                showReadMore[5] && (
-                  <p>
-                    The Todo List Application is a productivity tool
-                    designed to help users organize their tasks efficiently and
-                    manage their daily activities effectively. It offers a simple
-                    yet powerful interface for users to create, prioritize, and track tasks,
-                    ensuring better time management and task completion.
-
-                    The application's frontend is built using modern
-                    web technologies such as HTML, CSS, and JavaScript.
-                    Frameworks like React.js or Vue.js may be utilized
-                    to create a dynamic and interactive user
-                    interface, enhancing user experience and responsiveness.
-                  </p>
-                )
-              }
-              <div className='read-more'>
-                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(5)}>Read More</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className='pro-div'>
-              <a href="https://github.com/Rahul-202134/sps-game"><img src={sps} alt="" /></a>
-            </div>
-            <div className='project-name'>
-              Sciessor-Paper
-            </div>
-            <div>
-              {
-                showReadMore[6] && (
-                  <p>
-                    The Scissors Paper Game, also known as Rock
-                    Paper Scissors, is a classic hand game played
-                    between two participants. It's a simple yet entertaining
-                    game that requires quick thinking and strategy.
-
-
-                  </p>
-                )
-              }
-              <div className='read-more'>
-                <button className='text-center btn btn-primary mb-4 ' onClick={() => handleReadMore(6)}>Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
