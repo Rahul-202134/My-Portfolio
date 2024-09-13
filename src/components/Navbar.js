@@ -8,6 +8,11 @@ const Navbar = (props) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Function to handle calling functionality
+  const handleCall = () => {
+    window.location.href = 'tel:+9536741161'; // Replace with your desired phone number
+  };
+
   return (
     <div className='justify-content-center nav-main'>
       <div className='justify-content-center'>
@@ -51,7 +56,10 @@ const Navbar = (props) => {
                     </div>
                   </li>
                   <li className="nav-item">
-                    <button className="btn btn-primary">📲9536741161</button>
+                    {/* Call Button with calling functionality */}
+                    <button className="btn btn-primary" onClick={handleCall}>
+                      📲 9536741161
+                    </button>
                   </li>
                 </ul>
               </div>
