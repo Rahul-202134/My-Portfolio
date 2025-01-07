@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-
+import { IconCloudDemo } from './IconCloud';
 export default function Skills() {
   const [htmlPercentage, setHtmlPercentage] = useState(90);
   const [cssPercentage, setCssPercentage] = useState(80);
   const [bootstrapPercentage, setBootstrapPercentage] = useState(75);
   const [javascriptPercentage, setJavascriptPercentage] = useState(70);
   const [javaPercentage, setJavaPercentage] = useState(75);
-  const [phpPercentage, setPhpPercentage] = useState(80);
   const [reactJsPercentage, setReactJsPercentage] = useState(70);
 
   return (
     <div className='container'>
       <div className="row justify-content-center">
         <div className="col-lg-5 mb-4">
-          <h3 className='text-center'>Technical Skills</h3>
+          <h3 className='text-center'>Skills</h3>
           <div>
             <p>Html</p>
             <div className="progress">
@@ -44,12 +43,7 @@ export default function Skills() {
               <div className="progress-bar bar" role="progressbar" style={{ width: `${javaPercentage}%` }} aria-valuenow={javaPercentage} aria-valuemin="0" aria-valuemax="100">{javaPercentage}%</div>
             </div>
           </div>
-          <div>
-            <p>Php</p>
-            <div className="progress">
-              <div className="progress-bar bar" role="progressbar" style={{ width: `${phpPercentage}%` }} aria-valuenow={phpPercentage} aria-valuemin="0" aria-valuemax="100">{phpPercentage}%</div>
-            </div>
-          </div>
+          
           <div>
             <p>React Js</p>
             <div className="progress">
@@ -58,15 +52,7 @@ export default function Skills() {
           </div>
         </div>
         <div className="col-lg-5">
-          <h3 className='text-center'>Professional Skills</h3>
-          <div className="justify-content-center con d-flex mt-4">
-            <p>Problem Solving</p>
-            <p>Critical Thinking</p>
-          </div>
-          <div className="justify-content-center con d-flex">
-            <p>Leadership</p>
-            <p>Time Management</p>
-          </div>
+          <IconCloudDemo/>
         </div>
       </div>
     </div>
